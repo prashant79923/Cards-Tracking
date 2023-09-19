@@ -41,18 +41,6 @@
           ],
           [
             {
-              "id": "Tracking App_getApplicationRound",
-              "name": "getApplicationRound",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "tbl_application.selectedRow.id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Tracking App_Utils.getAWBs",
               "name": "Utils.getAWBs",
               "collectionId": "Tracking App_Utils",
