@@ -1,0 +1,4 @@
+{
+	"phone": {{Input1.text}},
+	"otp": {{Input2.text}}
+}

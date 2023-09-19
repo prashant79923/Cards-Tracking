@@ -1,0 +1,6 @@
+[{
+	"airwayBillNumber":{{tbl_application.selectedRow.AirwayBillNumber}},
+	"deliveryStatus":{{Select2.selectedOptionValue}},
+	"deliveryStatusTimeStamp":{{DatePicker2.formattedDate+"Z"}}
+	}
+	]

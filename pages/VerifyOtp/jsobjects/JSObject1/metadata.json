@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "VerifyOtp",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "VerifyOtp_JSObject1",
+  "deleted": false,
+  "gitSyncId": "65004d0aede87228853e70b9_650199d021b587125d21c775"
+}

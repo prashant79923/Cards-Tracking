@@ -1,0 +1,82 @@
+{
+  "unpublishedPage": {
+    "name": "Tracking App",
+    "slug": "tracking-app",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1160,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1110,
+          "containerStyle": "none",
+          "snapRows": 128,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 86,
+          "minHeight": 850,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "dynamicBindingPathList": []
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Tracking App_getCardsData",
+              "name": "getCardsData",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.jwt"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Tracking App_getApplicationRound",
+              "name": "getApplicationRound",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_application.selectedRow.id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Tracking App_Utils.getAWBs",
+              "name": "Utils.getAWBs",
+              "collectionId": "Tracking App_Utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  let output;\n  await jwtValidate.run().then(async res => {\n    showAlert('Your session is active!', 'success');\n    const response = await getCardsData.run().then(() => {\n      return getCardsData.data;\n    });\n    output = response.filter(awb => awb.includes(\"EB\")).map(awb => {\n      return {\n        \"AirwayBillNumber\": awb,\n        \"cardStatus\": \"DISPATCHED\"\n      };\n    });\n  }).catch(async error => {\n    showAlert('Your session has expired, please re-login!', error);\n    await storeValue(\"jwt\", undefined);\n    navigateTo('Login', {});\n  });\n  return output;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Tracking App",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "61c170fe9229e87746b79e05_61c433d6e89bc475f3cbc8aa"
+}
