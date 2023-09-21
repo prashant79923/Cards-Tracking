@@ -1,6 +1,6 @@
 export default {
 		url() {
-		if(appsmith.URL.fullPath.includes("tracking-cards-prod")){
+		if(appsmith.URL.fullPath.includes("cards-tracking-prod")){
 			return{"BaseUrl":'https://api.rupeek.co'}
 		} else {
 			return{"BaseUrl":'https://api-qa.rupeek.co'}
