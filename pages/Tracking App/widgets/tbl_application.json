@@ -6,6 +6,7 @@
     "topRow": 6,
     "isSortable": false,
     "onPageChange": "",
+    "defaultNewRow": "",
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
     "animateLoading": true,
@@ -16,7 +17,7 @@
         {"key": "primaryColumns.AirwayBillNumber.computedValue"}
     ],
     "needsHeightForContent": true,
-    "leftColumn": 5,
+    "leftColumn": 15,
     "delimiter": ",",
     "defaultSelectedRowIndex": "",
     "showInlineEditingOptionDropdown": true,
@@ -26,7 +27,7 @@
     "fontStyle": "",
     "enableClientSideSearch": true,
     "version": 2,
-    "totalRecordsCount": 0,
+    "totalRecordsCount": "0",
     "isLoading": false,
     "childStylesheet": {
         "button": {
@@ -52,7 +53,7 @@
         }
     },
     "borderRadius": "0.375rem",
-    "columnUpdatedAt": 1694776687313,
+    "columnUpdatedAt": 1695121012914,
     "defaultSelectedRowIndices": [0],
     "mobileBottomRow": 74,
     "widgetName": "tbl_application",
@@ -63,11 +64,12 @@
     ],
     "dynamicPropertyPathList": [
         {"key": "tableData"},
-        {"key": "onPageChange"}
+        {"key": "onPageChange"},
+        {"key": "onPageSizeChange"}
     ],
-    "compactMode": "DEFAULT",
+    "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 60,
+    "bottomRow": 40,
     "columnWidthMap": {
         "airwayBillNumber": 191,
         "application_status": 233,
@@ -152,7 +154,7 @@
     "key": "liwpj3ddwg",
     "canFreezeColumn": true,
     "isDeprecated": false,
-    "rightColumn": 39,
+    "rightColumn": 49,
     "textSize": "0.875rem",
     "widgetId": "pq1y04s3ns",
     "allowAddNewRow": false,

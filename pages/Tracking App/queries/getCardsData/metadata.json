@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://api-qa.rupeek.co"
+        "url": ""
       },
       "invalids": [],
       "messages": [],
@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/goldswiper/api/v1/cards/awb/undelivered",
+      "path": "{{Utils.url().BaseUrl}}/goldswiper/api/v1/cards/awb/undelivered",
       "headers": [
         {
           "key": "Authorization",
@@ -45,12 +45,16 @@
     "dynamicBindingPathList": [
       {
         "key": "headers[0].value"
+      },
+      {
+        "key": "path"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "Utils.url().BaseUrl",
       "appsmith.store.jwt"
     ],
     "userSetOnLoad": false,

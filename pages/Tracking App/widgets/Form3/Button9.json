@@ -12,14 +12,14 @@
         "click",
         "submit"
     ],
-    "topRow": 36,
-    "bottomRow": 40,
+    "topRow": 38,
+    "bottomRow": 42,
     "type": "BUTTON_WIDGET",
     "hideCard": false,
     "mobileRightColumn": 62,
     "animateLoading": true,
     "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 46,
+    "leftColumn": 38,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
         {"key": "borderRadius"}
@@ -41,9 +41,11 @@
     "isLoading": false,
     "mobileTopRow": 33,
     "responsiveBehavior": "hug",
+    "originalTopRow": 38,
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 46,
+    "originalBottomRow": 42,
     "buttonVariant": "PRIMARY",
     "placement": "CENTER"
 }

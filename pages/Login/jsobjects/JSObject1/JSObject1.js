@@ -1,6 +1,14 @@
 export default {
-	myVar1: [],
-	myVar2: {},
+		url() {
+		if(appsmith.URL.fullPath.includes("tracking-cards-prod")){
+			return{"BaseUrl":'https://api.rupeek.co'}
+		} else {
+			return{"BaseUrl":'https://api-qa.rupeek.co'}
+		}
+
+	},
+	
+	
 	Getotp () {
 		aaaSendOtp.run().then(() => {
 
@@ -14,9 +22,6 @@ export default {
 
 		//	write code here
 		//	this.myVar1 = [1,2,3]
-	},
-	async myFun2 () {
-		//	use async-await or promises
-		//	await storeValue('varName', 'hello world')
 	}
+	
 }
