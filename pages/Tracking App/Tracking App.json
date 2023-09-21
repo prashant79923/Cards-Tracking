@@ -34,6 +34,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
+                "Utils.url().BaseUrl",
                 "appsmith.store.jwt"
               ],
               "timeoutInMillisecond": 10000

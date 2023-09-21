@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "JSObject1.myFun2",
+    "name": "url",
+    "fullyQualifiedName": "Utils.url",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Login",
-    "collectionId": "Login_JSObject1",
+    "pageId": "Tracking App",
+    "collectionId": "Tracking App_Utils",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -23,7 +23,6 @@
       "jsArguments": []
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -35,10 +34,9 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-09-13T10:50:35Z"
+    "userPermissions": []
   },
-  "id": "Login_JSObject1.myFun2",
+  "id": "Tracking App_Utils.url",
   "deleted": false,
-  "gitSyncId": "65004d0aede87228853e70b9_650193fbc6267e2ef10d54c6"
+  "gitSyncId": "6509604b874d5306fe129525_650a8aee63828b6b158c8884"
 }

@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://api-qa.rupeek.co"
+        "url": ""
       },
       "invalids": [],
       "messages": [],
@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/goldswiper/api/v1/map-delivery-details",
+      "path": "{{Utils.url().BaseUrl}}/goldswiper/api/v1/map-delivery-details",
       "headers": [
         {
           "key": "Authorization",
@@ -55,6 +55,9 @@
       },
       {
         "key": "headers[0].value"
+      },
+      {
+        "key": "path"
       }
     ],
     "isValid": true,
@@ -63,6 +66,7 @@
     "jsonPathKeys": [
       "DatePicker2.formattedDate+\"Z\"",
       "Select2.selectedOptionValue",
+      "Utils.url().BaseUrl",
       "appsmith.store.jwt",
       "tbl_application.selectedRow.AirwayBillNumber"
     ],

@@ -1,4 +1,12 @@
 export default {
+		url() {
+		if(appsmith.URL.fullPath.includes("tracking-cards-prod")){
+			return{"BaseUrl":'https://api.rupeek.co'}
+		} else {
+			return{"BaseUrl":'https://api-qa.rupeek.co'}
+		}
+
+	},
 	async myFun2 () {
 		const user = AAALogin?.data?.user;
 		const jwt = AAALogin?.data?.token;

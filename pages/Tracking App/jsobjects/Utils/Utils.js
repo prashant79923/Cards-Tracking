@@ -1,36 +1,43 @@
 export default {
-	
-  
+	url() {
+		if(appsmith.URL.fullPath.includes("tracking-cards-prod")){
+			return{"BaseUrl":'https://api.rupeek.co'}
+		} else {
+			return{"BaseUrl":'https://api-qa.rupeek.co'}
+		}
+
+	},
+
 	async getAWBs() {
 		let output;
 		await jwtValidate.run().then(async(res) =>{
 			showAlert('Your session is active!', 'success')
-	 const response = await getCardsData.run().then(() => {
-		return getCardsData.data;
-		});
-		 output = response.filter((awb) => awb.includes("EB")).map((awb) => {
+			const response = await getCardsData.run().then(() => {
+				return getCardsData.data;
+			});
+			output = response.filter((awb) => awb.includes("EB")).map((awb) => {
 				return {
-				"AirwayBillNumber":awb,
-				"cardStatus":"DISPATCHED"
-			} 		
-		});
-			
-	
-			
+					"AirwayBillNumber":awb,
+					"cardStatus":"DISPATCHED"
+				} 		
+			});
+
+
+
 		}).catch(async (error) =>{
-				showAlert('Your session has expired, please re-login!', error)
+			showAlert('Your session has expired, please re-login!', error)
 			await storeValue("jwt", undefined);
 			navigateTo('Login', {});
 		})
-			return output;
-},
+		return output;
+	},
 
 	async changeCardStatus  (){
-		  await changeStatus.run().then((res) =>{
+		await changeStatus.run().then((res) =>{
 			showAlert('your status has updated successfully',res)
 		}).catch((error) => {
 			showAlert('status updation has failed',error)
 		})
-		
+
 	}
 }

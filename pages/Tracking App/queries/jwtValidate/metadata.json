@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://api-qa.rupeek.co"
+        "url": ""
       },
       "invalids": [],
       "messages": [],
@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/aaa/api/v1/auth/jwtvalidate",
+      "path": "{{Utils.url().BaseUrl}}/aaa/api/v1/auth/jwtvalidate",
       "headers": [
         {
           "key": "Authorization",
@@ -52,12 +52,16 @@
     "dynamicBindingPathList": [
       {
         "key": "headers[0].value"
+      },
+      {
+        "key": "path"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "Utils.url().BaseUrl",
       "appsmith.store.jwt"
     ],
     "userSetOnLoad": false,
