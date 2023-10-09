@@ -3,7 +3,7 @@
     "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
     "mobileBottomRow": 37,
     "widgetName": "Button1",
-    "onClick": "{{AAALogin.run().then(() => {\n  JSObject1.myFun2();\n}).catch(() => {\n  JSObject1.myFun1();\n});}}",
+    "onClick": "{{AAALogin.run().then(() => {\n  JSObject1.loginAAA();\n}).catch(() => {\n  JSObject1.otpExpireCheck();\n});}}",
     "buttonColor": "#14532d",
     "displayName": "Button",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",

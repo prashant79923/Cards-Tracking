@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "JSObject1.myFun2",
+    "name": "otpExpireCheck",
+    "fullyQualifiedName": "JSObject1.otpExpireCheck",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -34,9 +34,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-10-09T05:29:06Z"
   },
-  "id": "VerifyOtp_JSObject1.myFun2",
+  "id": "VerifyOtp_JSObject1.otpExpireCheck",
   "deleted": false,
-  "gitSyncId": "65004d0aede87228853e70b9_650199eec22f263c03233165"
+  "gitSyncId": "65004d0aede87228853e70b9_65238fa28feb9b5896bc3574"
 }

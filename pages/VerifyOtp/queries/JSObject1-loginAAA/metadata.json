@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "JSObject1.myFun1",
+    "name": "loginAAA",
+    "fullyQualifiedName": "JSObject1.loginAAA",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -34,9 +34,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-09-13T11:15:58Z"
   },
-  "id": "VerifyOtp_JSObject1.myFun1",
+  "id": "VerifyOtp_JSObject1.loginAAA",
   "deleted": false,
-  "gitSyncId": "65004d0aede87228853e70b9_650199eec22f263c03233166"
+  "gitSyncId": "65004d0aede87228853e70b9_650199eec22f263c03233165"
 }
